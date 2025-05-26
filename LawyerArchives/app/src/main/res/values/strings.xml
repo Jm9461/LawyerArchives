@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lawyer Archives</string>
+    <string name="title_activity_add_case">افزودن پرونده جدید</string>
+    <string name="title_activity_edit_case">ویرایش پرونده</string>
+    <string name="title_activity_clients">موکلان</string>
+    <string name="title_activity_sessions">جلسات دادگاهی</string>
+    <string name="title_activity_meetings">ملاقات‌ها</string>
+    <string name="add_new_case">افزودن پرونده جدید</string>
+    <string name="add_new_client">افزودن موکل جدید</string>
+    <string name="add_new_session">افزودن جلسه جدید</string>
+    <string name="add_new_meeting">افزودن ملاقات جدید</string>
+    <string name="save_case">ذخیره پرونده</string>
+    <string name="save_client">ذخیره موکل</string>
+    <string name="save_session">ذخیره جلسه</string>
+    <string name="save_meeting">ذخیره ملاقات</string>
+    <string name="edit_case">ویرایش پرونده</string>
+    <string name="edit_client">ویرایش موکل</string>
+    <string name="edit_session">ویرایش جلسه</string>
+    <string name="edit_meeting">ویرایش ملاقات</string>
+    <string name="delete">حذف</string>
+    <string name="edit">ویرایش</string>
+    <string name="case_title_hint">عنوان پرونده</string>
+    <string name="case_description_hint">شرح پرونده</string>
+    <string name="client_name_hint">نام موکل</string>
+    <string name="court_date_hint">تاریخ دادگاه (مثلاً 1403/05/10)</string>
+    <string name="status_hint">وضعیت پرونده (مثلاً در حال رسیدگی)</string>
+    <string name="added_date_hint">تاریخ افزودن (مثلاً 1403/05/01)</string>
+    <string name="client_phone_hint">تلفن</string>
+    <string name="client_email_hint">ایمیل</string>
+    <string name="client_address_hint">آدرس</string>
+    <string name="meeting_date_hint">تاریخ ملاقات (مثلاً 1403/05/10)</string>
+    <string name="meeting_topic_hint">موضوع ملاقات</string>
+    <string name="meeting_duration_hint">مدت زمان (مثلاً ۳۰ دقیقه)</string>
+    <string name="meeting_location_hint">محل ملاقات</string>
+    <string name="session_date_hint">تاریخ جلسه (مثلاً 1403/05/10)</string>
+    <string name="session_location_hint">محل جلسه</string>
+    <string name="session_description_hint">شرح جلسه</string>
+    <string name="session_completed_checkbox">تکمیل شده</string>
+    <string name="notification_channel_name">یادآوری‌های آرشیو وکیل</string>
+    <string name="notification_channel_description">یادآوری‌ها برای جلسات دادگاه و ملاقات‌ها</string>
+    <string name="notification_session_title">یادآوری جلسه دادگاه: %1$s</string>
+    <string name="notification_session_text">جلسه شما در تاریخ %1$s است.</string>
+</resources>
