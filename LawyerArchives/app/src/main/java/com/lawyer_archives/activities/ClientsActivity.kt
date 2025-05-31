@@ -33,7 +33,8 @@ class ClientsActivity : AppCompatActivity() {
         adapter = ClientAdapter(
             onEditClick = { client ->
                 val intent = Intent(this, EditClientActivity::class.java)
-                intent.putExtra("client", client)
+                // Pass client ID instead of whole object to avoid Parcelable/Serializable issues
+                intent.putExtra("clientId", client.id) // Corrected line
                 startActivity(intent)
             },
             onDeleteClick = { client ->

@@ -1,0 +1,244 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.lawyer_archives"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission
+12-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:6:5-7:38
+13        android:name="android.permission.READ_EXTERNAL_STORAGE"
+13-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:6:22-77
+14        android:maxSdkVersion="32" />
+14-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:7:9-35
+15    <uses-permission
+15-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:8:5-9:38
+16        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+16-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:8:22-78
+17        android:maxSdkVersion="28" />
+17-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:9:9-35
+18    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+18-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:10:5-77
+18-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:10:22-74
+19    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+19-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:11:5-79
+19-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:11:22-76
+20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+20-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:12:5-81
+20-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:12:22-78
+21
+22    <permission
+22-->[androidx.core:core:1.13.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\9433e46f2629ad9b7bc738951b4cc947\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+23        android:name="com.lawyer_archives.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.13.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\9433e46f2629ad9b7bc738951b4cc947\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.13.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\9433e46f2629ad9b7bc738951b4cc947\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="com.lawyer_archives.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+26-->[androidx.core:core:1.13.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\9433e46f2629ad9b7bc738951b4cc947\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.13.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\9433e46f2629ad9b7bc738951b4cc947\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+27
+28    <application
+28-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:14:5-80:19
+29        android:allowBackup="true"
+29-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:15:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.13.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\9433e46f2629ad9b7bc738951b4cc947\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+31        android:dataExtractionRules="@xml/data_extraction_rules"
+31-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:16:9-65
+32        android:debuggable="true"
+33        android:extractNativeLibs="false"
+34        android:fullBackupContent="@xml/backup_rules"
+34-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:17:9-54
+35        android:icon="@mipmap/ic_launcher"
+35-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:18:9-43
+36        android:label="@string/app_name"
+36-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:19:9-41
+37        android:roundIcon="@mipmap/ic_launcher_round"
+37-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:20:9-54
+38        android:supportsRtl="true"
+38-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:21:9-35
+39        android:theme="@style/AppTheme" >
+39-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:22:9-40
+40        <activity
+40-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:25:9-32:20
+41            android:name="com.lawyer_archives.activities.MainActivity"
+41-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:26:13-52
+42            android:exported="true" >
+42-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:27:13-36
+43            <intent-filter>
+43-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:28:13-31:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:29:17-69
+44-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:29:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:30:17-77
+46-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:30:27-74
+47            </intent-filter>
+48        </activity>
+49        <activity android:name="com.lawyer_archives.activities.ClientsActivity" />
+49-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:34:9-64
+49-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:34:19-61
+50        <activity android:name="com.lawyer_archives.activities.AddClientActivity" />
+50-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:35:9-66
+50-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:35:19-63
+51        <activity android:name="com.lawyer_archives.activities.EditClientActivity" />
+51-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:36:9-67
+51-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:36:19-64
+52        <activity android:name="com.lawyer_archives.activities.CasesActivity" />
+52-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:38:9-62
+52-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:38:19-59
+53        <activity android:name="com.lawyer_archives.activities.AddCaseActivity" />
+53-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:39:9-64
+53-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:39:19-61
+54        <activity android:name="com.lawyer_archives.activities.EditCaseActivity" />
+54-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:40:9-65
+54-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:40:19-62
+55        <activity android:name="com.lawyer_archives.activities.CaseDocumentsActivity" />
+55-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:41:9-70
+55-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:41:19-67
+56        <activity android:name="com.lawyer_archives.activities.MeetingsActivity" />
+56-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:43:9-65
+56-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:43:19-62
+57        <activity android:name="com.lawyer_archives.activities.AddMeetingActivity" />
+57-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:44:9-67
+57-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:44:19-64
+58        <activity android:name="com.lawyer_archives.activities.EditMeetingActivity" />
+58-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:45:9-68
+58-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:45:19-65
+59        <activity android:name="com.lawyer_archives.activities.SessionsActivity" />
+59-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:47:9-65
+59-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:47:19-62
+60        <activity android:name="com.lawyer_archives.activities.AddCourtSessionActivity" />
+60-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:48:9-72
+60-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:48:19-69
+61        <activity android:name="com.lawyer_archives.activities.EditCourtSessionActivity" />
+61-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:49:9-73
+61-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:49:19-70
+62
+63        <receiver
+63-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:51:9-58:20
+64            android:name="com.lawyer_archives.receivers.SessionReminderReceiver"
+64-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:52:13-62
+65            android:enabled="true"
+65-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:53:13-35
+66            android:exported="false" >
+66-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:54:13-37
+67            <intent-filter>
+67-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:55:13-57:29
+68                <action android:name="com.lawyer_archives.ACTION_SESSION_REMINDER" />
+68-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:56:17-86
+68-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:56:25-83
+69            </intent-filter>
+70        </receiver>
+71        <receiver
+71-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:60:9-68:20
+72            android:name="com.lawyer_archives.receivers.BootCompletedReceiver"
+72-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:61:13-60
+73            android:enabled="true"
+73-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:62:13-35
+74            android:exported="true" >
+74-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:63:13-36
+75            <intent-filter>
+75-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:64:13-67:29
+76                <action android:name="android.intent.action.BOOT_COMPLETED" />
+76-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:65:17-79
+76-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:65:25-76
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:66:17-76
+78-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:66:27-73
+79            </intent-filter>
+80        </receiver>
+81
+82        <provider
+83            android:name="androidx.core.content.FileProvider"
+83-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:71:13-62
+84            android:authorities="com.lawyer_archives.fileprovider"
+84-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:72:13-64
+85            android:exported="false"
+85-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:73:13-37
+86            android:grantUriPermissions="true" >
+86-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:74:13-47
+87            <meta-data
+87-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:75:13-77:54
+88                android:name="android.support.FILE_PROVIDER_PATHS"
+88-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:76:17-67
+89                android:resource="@xml/file_paths" />
+89-->C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\src\main\AndroidManifest.xml:77:17-51
+90        </provider>
+91        <provider
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Mehdi\.gradle\caches\8.9\transforms\0d040c4ff1cc403d918d66653f33ec29\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+92            android:name="androidx.startup.InitializationProvider"
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Mehdi\.gradle\caches\8.9\transforms\0d040c4ff1cc403d918d66653f33ec29\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+93            android:authorities="com.lawyer_archives.androidx-startup"
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Mehdi\.gradle\caches\8.9\transforms\0d040c4ff1cc403d918d66653f33ec29\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+94            android:exported="false" >
+94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Mehdi\.gradle\caches\8.9\transforms\0d040c4ff1cc403d918d66653f33ec29\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+95            <meta-data
+95-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Mehdi\.gradle\caches\8.9\transforms\0d040c4ff1cc403d918d66653f33ec29\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+96                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+96-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Mehdi\.gradle\caches\8.9\transforms\0d040c4ff1cc403d918d66653f33ec29\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+97                android:value="androidx.startup" />
+97-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Mehdi\.gradle\caches\8.9\transforms\0d040c4ff1cc403d918d66653f33ec29\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+98            <meta-data
+98-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Mehdi\.gradle\caches\8.9\transforms\5d618e490684e7f256b99ce004fbc530\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+99                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+99-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Mehdi\.gradle\caches\8.9\transforms\5d618e490684e7f256b99ce004fbc530\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+100                android:value="androidx.startup" />
+100-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Mehdi\.gradle\caches\8.9\transforms\5d618e490684e7f256b99ce004fbc530\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+101            <meta-data
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+102                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+103                android:value="androidx.startup" />
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+104        </provider>
+105
+106        <receiver
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+107            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+108            android:directBootAware="false"
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+109            android:enabled="true"
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+110            android:exported="true"
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+111            android:permission="android.permission.DUMP" >
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+112            <intent-filter>
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+113                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+114            </intent-filter>
+115            <intent-filter>
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+116                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+117            </intent-filter>
+118            <intent-filter>
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+119                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+120            </intent-filter>
+121            <intent-filter>
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+122                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Mehdi\.gradle\caches\8.9\transforms\4e1e3f9a8840577cea80071645d2610a\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+123            </intent-filter>
+124        </receiver>
+125    </application>
+126
+127</manifest>

@@ -16,13 +16,23 @@ class EditClientActivity : AppCompatActivity() {
         binding = ActivityEditClientBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val originalClient = intent.getParcelableExtra<Client>("client")!!
+        // Retrieve client ID instead of the whole object
+        val clientId = intent.getStringExtra("clientId")
         clientList = XmlManager.loadClients(this)
 
-        binding.editClientName.setText(originalClient.name)
-        binding.editClientPhone.setText(originalClient.phone)
-        binding.editClientEmail.setText(originalClient.email)
-        binding.editClientAddress.setText(originalClient.address)
+        // Find the client using the ID
+        val originalClient = clientList.find { it.id == clientId }
+
+        originalClient?.let {
+            binding.editClientName.setText(it.name)
+            binding.editClientPhone.setText(it.phone)
+            binding.editClientEmail.setText(it.email)
+            binding.editClientAddress.setText(it.address)
+        } ?: run {
+            // Handle case where client is not found, e.g., finish activity or show error
+            finish()
+            return
+        }
 
         binding.updateClientButton.setOnClickListener {
             val updatedClient = originalClient.copy(

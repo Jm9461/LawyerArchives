@@ -1,4 +1,3 @@
-// LawyerArchives/app/src/main/java/com/lawyer_archives/adapters/DocumentAdapter.kt
 package com.lawyer_archives.adapters
 
 import android.view.LayoutInflater
@@ -6,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.lawyer_archives.databinding.ItemDocumentBinding // We'll create this layout
+import com.lawyer_archives.databinding.ItemDocumentBinding
 import com.lawyer_archives.models.Document
 
 class DocumentAdapter(
@@ -14,10 +13,15 @@ class DocumentAdapter(
     private val onDeleteClick: (Document) -> Unit
 ) : ListAdapter<Document, DocumentAdapter.DocumentViewHolder>(DocumentDiffCallback()) {
 
-    class DocumentViewHolder(private val binding: ItemDocumentBinding) :
-        RecyclerView.ViewHolder(binding.root) {
+    // حالا DocumentViewHolder توابع کلیک را از سازنده دریافت می‌کند
+    class DocumentViewHolder(
+        private val binding: ItemDocumentBinding,
+        private val onDocumentClick: (Document) -> Unit,
+        private val onDeleteClick: (Document) -> Unit
+    ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: Document, onDocumentClick: (Document) -> Unit, onDeleteClick: (Document) -> Unit) {
+        // متد bind از توابع کلیک که در constructor دریافت شده‌اند استفاده می‌کند
+        fun bind(item: Document) {
             binding.documentTitle.text = item.title
             binding.documentDate.text = "تاریخ افزودن: ${item.addedDate}"
             binding.documentExtension.text = "نوع: ${item.fileExtension.uppercase()}"
@@ -35,11 +39,13 @@ class DocumentAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DocumentViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = ItemDocumentBinding.inflate(inflater, parent, false)
-        return DocumentViewHolder(binding)
+        // اینجا توابع کلیک را به سازنده DocumentViewHolder ارسال می‌کنیم
+        return DocumentViewHolder(binding, onDocumentClick, onDeleteClick)
     }
 
     override fun onBindViewHolder(holder: DocumentViewHolder, position: Int) {
-        holder.bind(getItem(position), onDocumentClick, onDeleteClick)
+        // حالا متد bind فقط آیتم را نیاز دارد، زیرا توابع کلیک در ViewHolder ذخیره شده‌اند
+        holder.bind(getItem(position))
     }
 
     class DocumentDiffCallback : DiffUtil.ItemCallback<Document>() {

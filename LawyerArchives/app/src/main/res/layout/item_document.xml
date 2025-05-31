@@ -17,45 +17,37 @@
             android:id="@+id/documentTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
             android:textSize="18sp"
+            android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="عنوان سند" />
-
-        <TextView
-            android:id="@+id/documentExtension"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="نوع: PDF"
-            android:textSize="14sp"
-            android:textColor="@color/purple_700" />
+            android:text="عنوان سند"/>
 
         <TextView
             android:id="@+id/documentDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="تاریخ افزودن: 1403/02/01"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
+            android:text="تاریخ افزودن: 1403/05/01"/>
+
+        <TextView
+            android:id="@+id/documentExtension"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="نوع: PDF"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="8dp"
-            android:gravity="end">
+            android:layout_marginTop="8dp">
 
             <Button
                 android:id="@+id/deleteButton"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="حذف"
-                android:backgroundTint="@color/purple_700"
-                android:textColor="@color/white"
-                android:layout_marginStart="8dp"/>
-
+                android:text="حذف سند"
+                android:backgroundTint="@color/design_default_color_error"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

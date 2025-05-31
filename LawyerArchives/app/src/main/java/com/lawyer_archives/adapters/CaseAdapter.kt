@@ -1,4 +1,3 @@
-// LawyerArchives/app/src/main/java/com/lawyer_archives/adapters/CaseAdapter.kt
 package com.lawyer_archives.adapters
 
 import android.view.LayoutInflater
@@ -15,10 +14,16 @@ class CaseAdapter(
     private val onDocumentsClick: (Case) -> Unit // New click listener for documents
 ) : ListAdapter<Case, CaseAdapter.CaseViewHolder>(CaseDiffCallback()) {
 
-    class CaseViewHolder(private val binding: ItemCaseBinding) :
-        RecyclerView.ViewHolder(binding.root) {
+    // حالا CaseViewHolder توابع کلیک را از سازنده دریافت می‌کند
+    class CaseViewHolder(
+        private val binding: ItemCaseBinding,
+        private val onEditClick: (Case) -> Unit,
+        private val onDeleteClick: (Case) -> Unit,
+        private val onDocumentsClick: (Case) -> Unit
+    ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: Case, onEditClick: (Case) -> Unit, onDeleteClick: (Case) -> Unit, onDocumentsClick: (Case) -> Unit) {
+        // متد bind از توابع کلیک که در constructor دریافت شده‌اند استفاده می‌کند
+        fun bind(item: Case) {
             binding.title.text = item.title
             binding.description.text = item.description
             binding.clientName.text = "موکل: ${item.clientName}"
@@ -34,7 +39,7 @@ class CaseAdapter(
                 onDeleteClick(item)
             }
 
-            binding.documentsButton.setOnClickListener { // New button click listener
+            binding.documentsButton.setOnClickListener {
                 onDocumentsClick(item)
             }
         }
@@ -43,11 +48,13 @@ class CaseAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CaseViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = ItemCaseBinding.inflate(inflater, parent, false)
-        return CaseViewHolder(binding)
+        // اینجا توابع کلیک را به سازنده CaseViewHolder ارسال می‌کنیم
+        return CaseViewHolder(binding, onEditClick, onDeleteClick, onDocumentsClick)
     }
 
     override fun onBindViewHolder(holder: CaseViewHolder, position: Int) {
-        holder.bind(getItem(position), onEditClick, onDeleteClick, onDocumentsClick)
+        // حالا متد bind فقط آیتم را نیاز دارد، زیرا توابع کلیک در ViewHolder ذخیره شده‌اند
+        holder.bind(getItem(position))
     }
 
     class CaseDiffCallback : DiffUtil.ItemCallback<Case>() {

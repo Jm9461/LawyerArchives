@@ -1,0 +1,6 @@
+com.lawyer_archives.test.app-jetified-core-1.5.0-0 C:\Users\Mehdi\.gradle\caches\8.9\transforms\7ff2923697bfd13dabcc5b1eb19f8bb7\transformed\jetified-core-1.5.0\res
+com.lawyer_archives.test.app-jetified-annotation-experimental-1.4.0-1 C:\Users\Mehdi\.gradle\caches\8.9\transforms\f0ca0e5780201490f28d4e2e5bf856ed\transformed\jetified-annotation-experimental-1.4.0\res
+com.lawyer_archives.test.app-androidTest-2 C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\build\generated\res\resValues\androidTest\debug
+com.lawyer_archives.test.app-mergeDebugAndroidTestResources-3 C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.lawyer_archives.test.app-mergeDebugAndroidTestResources-4 C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.lawyer_archives.test.app-debugAndroidTest-5 C:\Users\Mehdi\AndroidStudioProjects\LawyerArchives\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

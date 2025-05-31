@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editClientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نام موکل"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editClientPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="تلفن"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/editClientEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ایمیل"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/editClientAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="آدرس"
+        android:inputType="textPostalAddress"/>
+
+    <Button
+        android:id="@+id/saveClientButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ذخیره موکل"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

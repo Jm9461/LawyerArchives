@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -17,89 +18,76 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="18sp"
             android:textStyle="bold"
-            android:textSize="20sp"
             android:textColor="@color/black"
-            android:text="عنوان پرونده" />
+            android:text="عنوان پرونده"/>
 
         <TextView
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="شرح پرونده"
-            android:textSize="16sp"
-            android:textColor="@color/black" />
+            android:text="شرح پرونده"/>
 
         <TextView
             android:id="@+id/clientName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="موکل: نام موکل"
-            android:textSize="14sp"
-            android:textColor="@color/purple_700" />
+            android:text="موکل: نام موکل"/>
 
         <TextView
             android:id="@+id/courtDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="تاریخ دادگاه: 1403/05/10"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
+            android:text="تاریخ دادگاه: 1403/05/10"/>
 
         <TextView
             android:id="@+id/status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="وضعیت: در جریان"
-            android:textSize="14sp"
-            android:textColor="@color/black" />
+            android:text="وضعیت: در حال رسیدگی"/>
 
         <TextView
             android:id="@+id/addedDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="تاریخ افزودن: 1403/01/01"
-            android:textSize="12sp"
-            android:textColor="@android:color/darker_gray" />
+            android:text="تاریخ افزودن: 1403/05/01"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="8dp"
-            android:gravity="end">
-
-            <Button
-                android:id="@+id/documentsButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="مدارک"
-                android:backgroundTint="@color/teal_700"
-                android:textColor="@color/white"
-                android:layout_marginEnd="8dp"/>
+            android:layout_marginTop="8dp">
 
             <Button
                 android:id="@+id/editButton"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="ویرایش"
-                android:backgroundTint="@color/purple_500"
-                android:textColor="@color/white"
-                android:layout_marginEnd="8dp"/>
+                android:layout_marginEnd="4dp"/>
 
             <Button
                 android:id="@+id/deleteButton"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="حذف"
-                android:backgroundTint="@color/purple_700"
-                android:textColor="@color/white"/>
+                android:backgroundTint="@color/design_default_color_error"
+                android:layout_marginStart="4dp"/>
 
+            <Button
+                android:id="@+id/documentsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="مدارک"
+                android:layout_marginStart="8dp"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

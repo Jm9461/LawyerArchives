@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_edit_session.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_edit_session.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_add_session.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_add_session.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_meetings.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_meetings.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_cases.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_cases.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_edit_meeting.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_edit_meeting.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/item_document.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/item_document.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/item_meeting.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/item_meeting.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_case_documents.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_case_documents.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_add_meeting.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_add_meeting.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_add_client.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_add_client.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_clients.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_clients.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_sessions.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_sessions.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/item_session.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/item_session.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/item_client.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/item_client.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_edit_case.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_edit_case.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_edit_client.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_edit_client.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_main.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/item_case.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/item_case.xml"
+    },
+    {
+        "merged": "com.lawyer_archives.app-mergeDebugResources-37:/layout/activity_add_case.xml",
+        "source": "com.lawyer_archives.app-main-40:/layout/activity_add_case.xml"
+    }
+]

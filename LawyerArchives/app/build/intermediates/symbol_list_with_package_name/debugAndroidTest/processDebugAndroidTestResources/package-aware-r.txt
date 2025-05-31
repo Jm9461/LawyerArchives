@@ -1,0 +1,3 @@
+com.lawyer_archives.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
