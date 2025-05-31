@@ -10,4 +10,4 @@ if "%OS%"=="Windows_NT" setlocal
 
 set DIRNAME=%~dp0%
 if "%DIRNAME%"=="" set DIRNAME=.
-"%DIRNAME%\..\gradle\wrapper\gradle-wrapper.bat"
+"%DIRNAME%\..\gradle\wrapper\gradle-wrapper.bat" %*
