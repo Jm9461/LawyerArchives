@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lawyer_archives">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <application
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application>
         android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
 
         <activity
             android:name=".activities.MainActivity"
@@ -19,31 +31,51 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.CasesActivity" />
-        <activity android:name=".activities.AddCaseActivity" />
-        <activity android:name=".activities.EditCaseActivity" />
-
         <activity android:name=".activities.ClientsActivity" />
         <activity android:name=".activities.AddClientActivity" />
         <activity android:name=".activities.EditClientActivity" />
 
-        <activity android:name=".activities.SessionsActivity" />
-        <activity android:name=".activities.AddCourtSessionActivity" />
-        <activity android:name=".activities.EditCourtSessionActivity" />
+        <activity android:name=".activities.CasesActivity" />
+        <activity android:name=".activities.AddCaseActivity" />
+        <activity android:name=".activities.EditCaseActivity" />
+        <activity android:name=".activities.CaseDocumentsActivity" />
 
         <activity android:name=".activities.MeetingsActivity" />
         <activity android:name=".activities.AddMeetingActivity" />
         <activity android:name=".activities.EditMeetingActivity" />
 
+        <activity android:name=".activities.SessionsActivity" />
+        <activity android:name=".activities.AddCourtSessionActivity" />
+        <activity android:name=".activities.EditCourtSessionActivity" />
+
         <receiver
             android:name=".receivers.SessionReminderReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.lawyer_archives.ACTION_SESSION_REMINDER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receivers.BootCompletedReceiver"
+            android:enabled="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
-                <action android:name="android.lawyer_archives.SESSION_REMINDER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
     </application>
 </manifest>
