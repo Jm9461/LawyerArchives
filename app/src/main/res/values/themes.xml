@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.LawyerArchives" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- رنگ‌های اصلی (روشن) -->
+        <item name="colorPrimary">#6750A4</item>        <!-- purple_500 -->
+        <item name="colorPrimaryContainer">#EADDFF</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryInverse">#D0BCFF</item>
+
+        <item name="colorSecondary">#625B71</item>
+        <item name="colorSecondaryContainer">#E8DEF8</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.LawyerArchives" parent="Base.Theme.LawyerArchives" />
+</resources>

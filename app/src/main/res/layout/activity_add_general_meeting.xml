@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="عنوان جلسه"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etMeetingDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="تاریخ جلسه"
+        android:focusable="false"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etMeetingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="زمان جلسه"
+        android:focusable="false"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="محل برگزاری"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="توضیحات"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnSaveMeeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ذخیره جلسه" />
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="نام شرکت"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:id="@+id/etRegistrationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="تاریخ ثبت"
+            android:inputType="date"/>
+
+        <EditText
+            android:id="@+id/etLegalNationalId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="شناسه ملی"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etEconomicCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="کد اقتصادی"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etRegistrationNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="شماره ثبت"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="تلفن"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/etMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="موبایل"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="آدرس"
+            android:inputType="textPostalAddress"
+            android:minLines="2"/>
+
+        <EditText
+            android:id="@+id/etPostalCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="کد پستی"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etManagerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="نام مدیر"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/etLegalRepresentativeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="نام نماینده قانونی"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/etRepresentativeNationalId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="کد ملی نماینده"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="شماره تماس مدیر"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ایمیل"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="توضیحات"
+            android:inputType="textMultiLine"
+            android:minLines="3"/>
+
+        <Button
+            android:id="@+id/btnSaveLegalClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ذخیره"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

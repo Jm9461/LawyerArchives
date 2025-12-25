@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_clients"
+            android:icon="@drawable/ic_menu_clients"
+            android:title="@string/menu_clients" />
+        <item
+            android:id="@+id/nav_cases"
+            android:icon="@drawable/ic_menu_cases"
+            android:title="@string/menu_cases" />
+        <item
+            android:id="@+id/nav_meetings"
+            android:icon="@drawable/ic_menu_meetings"
+            android:title="@string/menu_meetings" />
+        <item
+            android:id="@+id/nav_sessions"
+            android:icon="@drawable/ic_menu_court_sessions"
+            android:title="@string/menu_court_sessions" />
+        <item
+            android:id="@+id/nav_daily_tasks"
+            android:icon="@drawable/ic_menu_tasks"
+            android:title="@string/menu_tasks" />
+        <item
+            android:id="@+id/nav_documents"
+            android:icon="@drawable/ic_menu_documents"
+            android:title="@string/menu_documents" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/menu_settings" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="خروج" />
+    </group>
+</menu>

@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- تم شب -->
+    <style name="Base.Theme.LawyerArchives" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- رنگ‌های اصلی (تیره) -->
+        <item name="colorPrimary">#D0BCFF</item>        <!-- purple_200 روشن در شب -->
+        <item name="colorPrimaryContainer">#4F378B</item>
+        <item name="colorOnPrimary">#381E72</item>        <!-- متن روی دکمه‌های اصلی تیره بشه -->
+        
+        <item name="colorSecondary">#CCC2DC</item>
+        <item name="colorSecondaryContainer">#4A4458</item>
+        <item name="colorOnSecondary">#332D41</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">#121212</item>
+    </style>
+
+    <style name="Theme.LawyerArchives" parent="Base.Theme.LawyerArchives" />
+</resources>

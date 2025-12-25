@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- رنگ‌های حالت شب (مقادیر تیره‌تر) -->
+    <color name="colorPrimary">#BB86FC</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="ripple_color">#40FFFFFF</color>
+    <color name="splash_background_light">#6200EE</color>
+    <color name="splash_background_dark">#121212</color>
+
+    <!-- رنگ‌های خطادار برای حالت شب -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC6</color>
+    <color name="teal_700">#018786</color>
+    <color name="white">#E0E0E0</color>
+    <color name="black">#121212</color>
+    <color name="red_error">#CF6679</color>
+</resources>

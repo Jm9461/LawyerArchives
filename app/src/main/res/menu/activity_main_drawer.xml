@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!-- آیتم‌های اصلی -->
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_cases"
+            android:icon="@drawable/ic_case"
+            android:title="پرونده‌ها" />
+        <item
+            android:id="@+id/nav_clients"
+            android:icon="@drawable/ic_client"
+            android:title="موکلین" />
+        <item
+            android:id="@+id/nav_sessions"
+            android:icon="@drawable/ic_court"
+            android:title="جلسات دادگاه" />
+        <item
+            android:id="@+id/nav_meetings"
+            android:icon="@drawable/ic_meeting"
+            android:title="قرار ملاقات‌ها" />
+        <item
+            android:id="@+id/nav_daily_tasks"
+            android:icon="@drawable/ic_task"
+            android:title="وظایف روزانه" />
+        <item
+            android:id="@+id/nav_documents"
+            android:icon="@drawable/ic_document"
+            android:title="اسناد و مدارک" />
+    </group>
+
+    <!-- گروه زیرمنو -->
+    <item android:title="@string/menu_subtitle">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+    <!-- گروه تنظیمات و خروج -->
+    <group>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="تنظیمات" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="خروج" />
+    </group>
+
+</menu>
